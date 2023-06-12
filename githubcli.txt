@@ -1,3 +1,4 @@
 #!/bin/bash
 sudo pacman -S github-cli -y
 gh auth login
+sudo pacman -S hub -y
