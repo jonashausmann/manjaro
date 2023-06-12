@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo pacman -S neovim -y
+sudo pacman -S ripgrep -y
+
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
