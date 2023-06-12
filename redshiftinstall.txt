@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo pacman -S redshift
+redshift -P -O 1000

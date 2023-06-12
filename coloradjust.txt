@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Enter day, evening, or night"
+
+read time
+
+if [[ "$time" == "day" ]]; then
+	redshift -P -O 6500
+	elif [[ "$time" == "evening" ]]; then
+		redshift -P -O 4000
+	elif [[ "$time" == "night" ]]; then
+		redshift -P -O 1000
+	fi
