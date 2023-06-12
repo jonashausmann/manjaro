@@ -1,0 +1,6 @@
+#!/bin/bash
+# line=$(( $(grep -n exec ~/.xinitrc | cut -d : -f 1) - 1))
+# echo $line
+set -o noclobber
+esc=$(sed '/exec/i setxkbmap -option caps:escape' ~/.xinitrc)
+echo "$esc" >| ~/.xinitrc
