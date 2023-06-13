@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i 's/userapp-Pale Moon.desktop/microsoft-edge-stable.desktop/g' ~/.config/mimeapps.list
